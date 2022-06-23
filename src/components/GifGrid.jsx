@@ -1,9 +1,10 @@
 import { GifItem } from "./GifItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 
-
-export const GifGrid = ({ category }) => {
+export const GifGrid = ({ category, del }) => {
   const { images, isLoading } = useFetchGifs(category);
+
+  //borrar images
 
   return (
     <>

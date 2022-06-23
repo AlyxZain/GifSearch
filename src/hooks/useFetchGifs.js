@@ -3,7 +3,7 @@ import { getGifs } from "../helpers/getGifs";
 
 export const useFetchGifs = (category) => {
   const [images, setImages] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   const getimages = async () => {
     const images = await getGifs(category);

@@ -43,8 +43,9 @@
   .card-grid {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
     justify-content: center;
+    padding-top: 20px;
   }
   
   .card {

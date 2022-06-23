@@ -8,7 +8,6 @@ export const GifExpertApp = () => {
     for (let i = 0; i < categories.length; i++) {
       if (categories[i].toUpperCase() === NewCategory.toUpperCase()) return;
     }
-
     setCategories([NewCategory, ...categories]);
   };
 
@@ -16,15 +15,11 @@ export const GifExpertApp = () => {
     <>
       <h1>GifExpertApp</h1>
 
-      <AddCategory onNewCategory={onAddCategory} 
-      />
+      <AddCategory onNewCategory={onAddCategory} />
 
-      {
-        categories.map((category) => (
-          <GifGrid key={category} category={category} />
-        ))
-      }
-
+      {categories.map((category) => (
+        <GifGrid key={category} category={category} />
+      ))}
     </>
-  )
-}
+  );
+};
