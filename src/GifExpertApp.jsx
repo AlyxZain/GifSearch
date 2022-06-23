@@ -2,7 +2,9 @@ import { useState } from "react";
 import { GifGrid, AddCategory } from "./components";
 
 export const GifExpertApp = () => {
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState([
+    "Kimetsu no Yaiba",
+  ]);
 
   const onAddCategory = (NewCategory) => {
     for (let i = 0; i < categories.length; i++) {
